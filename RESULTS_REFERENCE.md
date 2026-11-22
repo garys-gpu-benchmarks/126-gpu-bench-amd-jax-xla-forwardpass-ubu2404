@@ -11,16 +11,16 @@ Reference results from the validation run on the system shown in each section (r
 ## smoke
 
 - **System:** 1× AMD Instinct MI300X VF (196288 MB) · INTEL(R) XEON(R) PLATINUM 8568Y+ · Ubuntu 24.04.5 LTS · kernel 6.8.0-149-generic · driver 7.1.9.31600000
-- **Run:** 2026-11-22T11:27:17Z · status **PASS** (exit 0)
-- **Time (mm:ss):** setup 01:23 · benchmark 00:01 · whole run 01:37
-- **Source:** run 126_20261122_112717
+- **Run:** 2026-11-22T15:05:16Z · status **PASS** (exit 0)
+- **Time (mm:ss):** setup 01:22 · benchmark 00:00 · whole run 01:36
+- **Source:** run 126_20261122_150516
 - **Command:** `bash run_benchmark.sh --smoke --device-id 0 --dtype FP16 --sequence-len 16 --hidden-size 64 --num-layers 1 --num-heads 4 --vocab-size 32000 --batch-size 1 --warmup-iters 1 --num-iterations 3 --seed 42`
 
 | # | Metric | Result |
 |---|---|---|
-| 1 | Forward-pass latency, ms (forward_latency_msec) | 0.099849 |
-| 2 | Throughput, tokens/s (tokens_per_sec) | 160241.430459 |
-| 3 | Modeled TFLOPS, full forward pass (tflops) | 0.667507 |
-| 4 | XLA compilation time, ms (jit_compile_msec) | 2918.974187 |
+| 1 | Forward-pass latency, ms (forward_latency_msec) | 0.121316 |
+| 2 | Throughput, tokens/s (tokens_per_sec) | 131887.335044 |
+| 3 | Modeled TFLOPS, full forward pass (tflops) | 0.549394 |
+| 4 | XLA compilation time, ms (jit_compile_msec) | 2923.417305 |
 | 5 | Peak HBM, GB (peak_hbm_gb) | 0.188677 |
 <!-- /profile:smoke -->
